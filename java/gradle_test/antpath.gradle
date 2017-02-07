@@ -1,0 +1,9 @@
+task list << {
+def path = ant.path {
+fileset(dir: 'src', includes: '**/*.java')
+}
+path.list().each {
+println it
+}
+}
+

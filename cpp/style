@@ -1,0 +1,15 @@
+#!/bin/bash
+
+line=`wc -l ${1} | awk -F ' ' '{print $1}'`
+echo ${line}
+echo "input file ${1} hava ${line} lines"
+
+
+for (( i=0; i<=${line}; i++ ))
+do
+#echo -e "$i:\t `sed -n "${i}p" $1`" 
+line_content=`sed -n "${i}p" $1`
+echo ${line_content}
+words= `echo ${line_content} | awk -F ' ' '{print $1}'`
+echo "${words} words" 
+done

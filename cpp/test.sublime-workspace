@@ -1,0 +1,657 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"in",
+				"inc	#include \"…\""
+			],
+			[
+				"p",
+				"pl	println"
+			],
+			[
+				"im",
+				"imt	import junit.framework.TestCase;"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "Searching 88 files for \"system\"\n\n/home/wangjf/work/program/java/JCETest/JCETest.java:\n   69: System.out.print(\"Attempting to get a Blowfish key...\");\n   79:         	System.out.println(\"Cipher acquired sucessfully. transformation: \" + transformation);\n   82: 			System.out.println(\"Error getting the Cipher. transformation: \" + transformation);\n   85:         	System.out.println(\"Error getting the Cipher. transformation: \" + transformation);\n   96: System.out.println(\"OK\");\n  100: System.out.println(\"Test completed successfully.\");\n\n/home/wangjf/work/program/java/JNICall/AACJni.java:\n   11:   System.loadLibrary(\"Sample1\");\n\n/home/wangjf/work/program/java/JNICall/Sample1.java:\n   18:   System.loadLibrary(\"Sample1\");\n   25:   System.out.println(\"intMethod:   \" + square);\n   26:   System.out.println(\"booleanMethod:   \" + bool);\n   27:   System.out.println(\"stringMethod:   \" + text);\n   28:   System.out.println(\"intArrayMethod:   \" + sum);\n\n/home/wangjf/work/program/java/MirrorPacket.java:\n   21: 	System.out.println(\"parent Mirror output\");\n\n/home/wangjf/work/program/java/MirrorStreamPacket.java:\n   11:                 System.out.println(\"stream push buffer\");\n\n/home/wangjf/work/program/java/SocketChannelReader.java:\n   17: System.err.println(e.toString());\n   29: System.out.println(\"hostName:\"+socketAddress.getHostName()+\"\\naddress:\"+(socketAddress.isUnresolved()?\"unresolved\":\"resolved\"));\n   32: 	System.out.println(\"addr:\"+socketAddress.getAddress());\n   51: System.out.println(charset.decode(buffer));\n\n/home/wangjf/work/program/java/file/myapp/.idea/inspectionProfiles/Project_Default.xml:\n   97:     <inspection_tool class=\"ArchaicSystemPropertyAccess\" enabled=\"true\" level=\"WARNING\" enabled_by_default=\"true\" />\n\n/home/wangjf/work/program/java/file/myapp/ant.properties:\n    1: # This file is used to override default values used by the Ant build system.\n    3: # This file must be checked into Version Control Systems, as it is\n    4: # integral to the build system of your project.\n\n/home/wangjf/work/program/java/file/myapp/build.xml:\n    6:        Version Control Systems. -->\n   25:        This file is an integral part of the build system for your\n   26:        application and should be checked into Version Control Systems.\n   47:        This file is an integral part of the build system for your\n   48:        application and should be checked into Version Control Systems. -->\n\n~/work/program/java/file/myapp/heap.hprof:\n    <binary>\n\n/home/wangjf/work/program/java/file/myapp/local.properties:\n    4: # This file must *NOT* be checked into Version Control Systems,\n    8: # For customization when using a Version Control System, please read the\n\n/home/wangjf/work/program/java/file/myapp/project.properties:\n    4: # This file must be checked in Version Control Systems.\n    6: # To customize properties used by the Ant build system edit\n\n/home/wangjf/work/program/java/file/myapp/src/com/example/myapp/MyActivity.java:\n   57:                             System.out.println(\"1\");\n   68:                             System.out.println(\"2\");\n\n/home/wangjf/work/program/java/file/tempfile/.idea/inspectionProfiles/Project_Default.xml:\n   97:     <inspection_tool class=\"ArchaicSystemPropertyAccess\" enabled=\"true\" level=\"WARNING\" enabled_by_default=\"true\" />\n\n/home/wangjf/work/program/java/file/tempfile/src/com/company/TempFile.java:\n   16:     static final Date CurDate = new Date(System.currentTimeMillis());\n   31:             System.out.println(\"file not exist\");\n\n/home/wangjf/work/program/java/mDns.java:\n   13: 			System.out.println(\"IP:\"+localHost.toString());\n   17: 					System.out.println(\"loopback:\");\n   23: 					System.out.println(\"p2p:\");\n   27: 				System.out.println(iface.toString() + \" status:\" + (iface.isUp()?\"up\":\"down\"));\n   31: 						System.out.println(\"----addrIPV4\"+\":\"+addr.toString()+\"HostName:\"+addr.getHostName());\n   33: 						System.out.println(\"----addrIPv6\"+\":\"+addr.toString()+\"HostName:\"+addr.getHostName());\n   37: 					System.out.println(\"join mdns Group\");\n\n/home/wangjf/work/program/java/main.java:\n   60:             System.out.println(e.getDeclaringClass()+e.name()+e.toString()+e.ordinal());\n   64:   System.out.println(l+\"\\r\\n\");	\n   77: System.out.println(\"--------\"+out.toString());\n   79: System.out.println(\"size:\"+out.size()+\"after reset\");\n   81: System.out.println(\"%\"+56);\n   82: System.out.println(\"please input text\");\n   83: System.in.read(input);\n   88: System.out.println(\"str:  \"+ item);\n   92: System.out.println(\"local\");\n   94: System.out.println(\"remote\");\n   99: System.out.print(\"===\"+str);\n  104: System.out.println(String.format(\"%f\",3.617427666318E9));\n  109: 	System.out.println(\"index\"+index+\",String:\"+frameQueue.remove(index));\n  119: System.out.println(\"String:\"+testStr);\n  124: 	//System.out.printf(\"%c\",charArray[i]);\n  128: System.out.println(fmt);\n  131: System.out.println(\"host address:\"+addr.toString());\n\n/home/wangjf/work/program/java/nio/NIOSumServer.java:\n   37: System.err.println(e.toString());\n   44: System.out.println(\"服务器通道已经打开\");\n   54: System.out.println(\"new connection coming ini:\"+Count++);\n   70: System.out.println(\"quit connection listen\");\n   85: System.out.println(sub.testInterface(\"Hello\"));\n\n/home/wangjf/work/program/java/nio/SumClient.java:\n   29: }catch(IOException e){System.err.println(e.toString());\n   50: System.out.println(\"发送加法请求 \"+first+\"+\"+second);\n   60: System.out.println(\"加法结果为 :\"+sumClient.getSum(100,324));\n\n/home/wangjf/work/program/java/nio/SumServer.java:\n   26: System.err.println(e.toString());\n   32: System.out.println(\"服务器通道已经打开\");\n   38: System.out.println(\"新的连接加入\");\n\n/home/wangjf/work/program/java/test.java:\n   20: System.out.println(\"buffer size\"+buffer.length);\n   23: 	System.out.println(\"buffer val:\"+buffer[i]);\n   30:         System.out.println(\"buffer val:\"+buffer[i]);\n   47: System.out.println(\"offset:\"+byteBuf.arrayOffset());\n   48: System.out.println(\"val:\"+byteBuf.getFloat());\n   49: System.out.println(\"val:\"+byteBuf.getFloat());\n   62: 		System.out.println(\"step end\"+step+\" count\"+fileBuffer.length);\n   66: 		System.out.println(\"once\"+floatStr);\n   71:         		System.out.println(\"float val:\"+buffer[i].trim());\n   75: 		System.out.println(\"idx end\"+idx);\n   84:         System.out.println(\"arr val:\"+ String.format(\"%c\",arr2[i]));\n   92: 	System.out.println(\"we will test para pointer\");\n\n/home/wangjf/work/program/java/thread/ThreadTest.java:\n    5: System.out.println(\"test started\");\n    7: System.out.println(\"test stopped\");\n    9: System.out.println(\"test restart\");\n\n~/work/program/java/thread/future/.FutureTest.java.swp:\n    <binary>\n\n/home/wangjf/work/program/java/thread/future/FutureTest.java:\n   24: 	System.out.println(c);\n   53: 	   System.out.println(\"checking....\");\n   69:        System.out.println(future.get()); // use future\n   71:        System.out.println(\"show search exit\");*/\n  114: 	//System.out.println(\"*******************************************************************************main exit\");\n\n243 matches across 24 files\n",
+			"settings":
+			{
+				"buffer_size": 7041,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"contents": "#include \"stdlib.h\"\n#include \"stdio.h\"\n\nint item_1(){\n	printf(\"%s\\n\", \"call function item_1\");\n	return 0;\n}\nint main(int argc, char const *argv[])\n{\n	/* code */\n	item_1();\n\n	return 0;\n}",
+			"file": "newsublime.c",
+			"file_size": 185,
+			"file_write_time": 130693229086159676,
+			"settings":
+			{
+				"buffer_size": 185,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"",
+				"Snippet: struct"
+			],
+			[
+				"list",
+				"Sort Lines (Case Sensitive)"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"main",
+			"run",
+			"build",
+			"ls",
+			"!ls",
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/wangjf/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/wangjf/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/wangjf/work/program/cpp/newsublime.c",
+		"/home/wangjf/work/program/java/SocketChannelReader.java",
+		"/home/wangjf/work/program/java/file/myapp/.idea/inspectionProfiles/Project_Default.xml",
+		"/home/wangjf/work/program/java/JCETest/JCETest.java",
+		"/home/wangjf/work/program/java/JNICall/AACJni.java",
+		"/home/wangjf/work/program/java/JNICall/Sample1.java",
+		"/home/wangjf/work/program/java/MirrorPacket.java",
+		"/home/wangjf/work/program/java/MirrorStreamPacket.java",
+		"/home/wangjf/work/program/cpp/test.sublime-project"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 96.0,
+		"where_history":
+		[
+			"/home/wangjf/work/program/java"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"item_1",
+			"main",
+			"system"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7041,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										93,
+										99
+									],
+									[
+										166,
+										172
+									],
+									[
+										262,
+										268
+									],
+									[
+										361,
+										367
+									],
+									[
+										451,
+										457
+									],
+									[
+										484,
+										490
+									],
+									[
+										598,
+										604
+									],
+									[
+										692,
+										698
+									],
+									[
+										732,
+										738
+									],
+									[
+										787,
+										793
+									],
+									[
+										844,
+										850
+									],
+									[
+										900,
+										906
+									],
+									[
+										1007,
+										1013
+									],
+									[
+										1131,
+										1137
+									],
+									[
+										1238,
+										1244
+									],
+									[
+										1279,
+										1285
+									],
+									[
+										1416,
+										1422
+									],
+									[
+										1479,
+										1485
+									],
+									[
+										1654,
+										1660
+									],
+									[
+										1871,
+										1877
+									],
+									[
+										1935,
+										1941
+									],
+									[
+										1984,
+										1990
+									],
+									[
+										2092,
+										2098
+									],
+									[
+										2162,
+										2168
+									],
+									[
+										2247,
+										2253
+									],
+									[
+										2313,
+										2319
+									],
+									[
+										2398,
+										2404
+									],
+									[
+										2591,
+										2597
+									],
+									[
+										2656,
+										2662
+									],
+									[
+										2797,
+										2803
+									],
+									[
+										2861,
+										2867
+									],
+									[
+										2990,
+										2996
+									],
+									[
+										3050,
+										3056
+									],
+									[
+										3209,
+										3215
+									],
+									[
+										3416,
+										3422
+									],
+									[
+										3464,
+										3470
+									],
+									[
+										3555,
+										3561
+									],
+									[
+										3615,
+										3621
+									],
+									[
+										3660,
+										3666
+									],
+									[
+										3699,
+										3705
+									],
+									[
+										3792,
+										3798
+									],
+									[
+										3892,
+										3898
+									],
+									[
+										3991,
+										3997
+									],
+									[
+										4092,
+										4098
+									],
+									[
+										4178,
+										4184
+									],
+									[
+										4216,
+										4222
+									],
+									[
+										4270,
+										4276
+									],
+									[
+										4331,
+										4337
+									],
+									[
+										4366,
+										4372
+									],
+									[
+										4414,
+										4420
+									],
+									[
+										4444,
+										4450
+									],
+									[
+										4487,
+										4493
+									],
+									[
+										4523,
+										4529
+									],
+									[
+										4560,
+										4566
+									],
+									[
+										4596,
+										4602
+									],
+									[
+										4662,
+										4668
+									],
+									[
+										4740,
+										4746
+									],
+									[
+										4789,
+										4795
+									],
+									[
+										4834,
+										4840
+									],
+									[
+										4866,
+										4872
+									],
+									[
+										4981,
+										4987
+									],
+									[
+										5022,
+										5028
+									],
+									[
+										5062,
+										5068
+									],
+									[
+										5127,
+										5133
+									],
+									[
+										5180,
+										5186
+									],
+									[
+										5309,
+										5315
+									],
+									[
+										5350,
+										5356
+									],
+									[
+										5405,
+										5411
+									],
+									[
+										5521,
+										5527
+									],
+									[
+										5562,
+										5568
+									],
+									[
+										5602,
+										5608
+									],
+									[
+										5682,
+										5688
+									],
+									[
+										5739,
+										5745
+									],
+									[
+										5799,
+										5805
+									],
+									[
+										5851,
+										5857
+									],
+									[
+										5911,
+										5917
+									],
+									[
+										5965,
+										5971
+									],
+									[
+										6021,
+										6027
+									],
+									[
+										6094,
+										6100
+									],
+									[
+										6148,
+										6154
+									],
+									[
+										6208,
+										6214
+									],
+									[
+										6258,
+										6264
+									],
+									[
+										6327,
+										6333
+									],
+									[
+										6439,
+										6445
+									],
+									[
+										6482,
+										6488
+									],
+									[
+										6525,
+										6531
+									],
+									[
+										6702,
+										6708
+									],
+									[
+										6736,
+										6742
+									],
+									[
+										6786,
+										6792
+									],
+									[
+										6848,
+										6854
+									],
+									[
+										6900,
+										6906
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								1612,
+								1618
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 516.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "newsublime.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 185,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								172,
+								172
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/C++/C.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "test.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

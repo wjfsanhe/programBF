@@ -1,0 +1,13 @@
+No.     Time        Source                Destination           Protocol Length Info
+ 449080 564.838170  10.68.19.208          224.0.0.22            IGMP     62     V3 Membership Report / Join group 239.255.255.250 for any sources / Join group 224.0.0.251 for any sources
+
+Frame 449080: 62 bytes on wire (496 bits), 62 bytes captured (496 bits)
+Ethernet II, Src: IntelCor_a5:bb:68 (10:0b:a9:a5:bb:68), Dst: IPv4mcast_00:00:16 (01:00:5e:00:00:16)
+Internet Protocol Version 4, Src: 10.68.19.208 (10.68.19.208), Dst: 224.0.0.22 (224.0.0.22)
+Internet Group Management Protocol
+    [IGMP Version: 3]
+    Type: Membership Report (0x22)
+    Header checksum: 0x0907 [correct]
+    Num Group Records: 2
+    Group Record : 239.255.255.250  Mode Is Exclude
+    Group Record : 224.0.0.251  Mode Is Exclude

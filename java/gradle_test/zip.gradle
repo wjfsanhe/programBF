@@ -1,0 +1,21 @@
+ apply plugin: 'java'
+    archivesBaseName = 'gradle'
+    version = 1.0
+
+    task myZip(type: Zip) {
+        appendix = 'wrapper'
+        classifier = 'src'
+        from 'src'
+	include "**/*.java"
+    }
+    
+    task Antzip {
+	 ant.zip(destfile: 'archive.zip') {
+            fileset(dir: 'src/main') {
+                exclude(name: '**/*.xml')
+                include(name: '**/*.java')
+            }
+        }
+	}
+
+    println myZip.archiveName

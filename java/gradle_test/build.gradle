@@ -1,0 +1,21 @@
+task hello << {
+		println 'Hello world!'
+		4.times { print "$it time\n" }
+		println project.buildDir
+		println tasks.getByPath("hello").path
+}
+task call (dependsOn:hello) << {
+	println 'task call hello'
+}
+4.times { counter->
+	task "callvar$counter"  << {
+		println "output $counter"
+	}
+}
+task('copy', type: Copy) {
+String source='from'
+from(file(source))
+into(file('to'))
+include('aaa')
+}
+

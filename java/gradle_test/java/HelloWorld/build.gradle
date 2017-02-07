@@ -1,0 +1,38 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = "com.amlogic.simple.HelloWorld"
+task createDocs {
+    def docs = file("$buildDir/docs")
+    outputs.dir docs
+    doLast {
+        docs.mkdirs()
+        new File(docs, "readme.txt").write("Read me!")
+    }
+}
+
+distributions {
+    main {
+        contents {
+            from(createDocs) {
+                into "docs"
+            }
+        }
+    }
+}
+task emailMe(dependsOn: compileJava) << {
+if(tasks.compileJava.didWork) {
+println 'SEND EMAIL ANNOUNCING SUCCESS'
+println "task path:${path}"
+}
+}
+
+task go(type: JavaExec, dependsOn: 'classes') {
+    description '运行指定main函数的java'
+    classpath = sourceSets.main.runtimeClasspath
+    if(project.hasProperty('main')){
+        main = "com.amlogic.simple.${project.getProperty('main')}"
+    }
+}
+
+

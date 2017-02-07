@@ -1,0 +1,6 @@
+while [ true ] ; do
+
+java MulticastNet
+sleep 2
+
+done

@@ -1,0 +1,28 @@
+import org.apache.tools.ant.filters.FixCrLfFilter
+import org.apache.tools.ant.filters.ReplaceTokens
+
+task filter(type: Copy) {
+from 'src/main/webapp'
+into 'build/explodedWar'
+expand(Year: '2009', Ver: '2.5.1')
+expand(project.properties)
+filter(FixCrLfFilter)
+filter(ReplaceTokens, tokens: [copyright: '2009', version: '2.3.1'])
+filter { String line ->
+"[$line]"
+}
+filter { String line ->
+line.startsWith('-') ? null : line
+}
+String greeting = 'hello from Ant'
+ant.echo(greeting)
+}
+def curEnv='test'
+task  expandW(type: Copy) {
+//        dependsOn copyJsToWebApp
+        from "$projectDir/src/main/webapp"
+        into "$buildDir/webapp"
+        exclude '**/*.js'
+        expand(ENV: curEnv)
+    }
+

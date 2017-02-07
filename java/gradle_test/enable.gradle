@@ -1,0 +1,4 @@
+task hello << {
+	println "hello kids"
+}
+hello.enabled=false

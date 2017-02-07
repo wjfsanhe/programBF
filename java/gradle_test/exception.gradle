@@ -1,0 +1,9 @@
+task compile <<{
+	println "compile the code"
+}
+compile.doFirst {
+	if(true) {throw new StopExecutionException()}
+}
+task Hello(dependsOn:compile) << {
+	println "main hello"
+}
